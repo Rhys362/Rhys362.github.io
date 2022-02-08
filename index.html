@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ramsay's Catering Services</title>
+<link rel="icon" href="imgs/chefhat.png" type="image/png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="main.css">
+<script src="functions.js" type="text/javascript"></script>	
+</head>
+<style>
+.image {
+  animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+</style>
+
+<body>
+
+<div class="headerContainer">
+<div class="topnav" id="myTopnav">
+  <h1>Ramsay's Catering Services</h1>
+  <a href="index.html">Home</a>
+  <a href="about.html">About Us</a>
+  <div class="dropdown">
+    <button class="dropbtn">Menus
+    </button>
+    <div class="dropdown-content">
+      <a href="menu1.html">Fine Dining</a>
+	  <a href="menu3.html">Italian</a>
+      <a href="menu2.html">Summer BBQ</a>
+    </div>
+  </div> 
+  <a href="quoteForm.html">Get a Quote</a>
+  <a href="#Contact">Contact</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+  </div>
+
+					<div class="banner" id="image">
+						<div class="image">
+						  <img src="imgs\mainPic.jpeg" alt="Private chef for catering events in Essex">
+							</div>
+						</div>
+						
+						
+							<div class="text">
+								<h2> Private catering service based in Essex and surrounding areas
+								for all manner of special occasions.</h2>
+								
+								<div class="paraText">
+								<p>With over 35 years experience in the catering industry we offer a personal, exclusive service with all events tailor-made to suit your requirements, providing luxury and comfort in your own home or hired venue.
+								<br><br> Our key focus is to ensure your experience is as relaxing and stress free as possible allowing you to enjoy precious moments with your guests.
+								</p>
+						</div>
+						</div>
+						<hr>
+						
+					<div class="row">
+  <div class="column">
+    <img src="imgs/img1.jpg" alt="Salmon dish created by Chef Ramsay, private chef in Essex" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="imgs/Capture.jpg" alt="Sea Bass dish created by Chef Ramsay, private chef in Essex" style="width:100%">
+	</div>
+	 <div class="column">
+    <img src="imgs/img4.jpg" alt="Guacamole, burrata, balsamic on toast - created by Chef Ramsay, private chef in Essex" style="width:100%">
+  </div>
+  </div>
+
+<hr>
+
+	<div class="row2">
+	<div class="column2" style="font-family: Century Gothic, Sans-Serif;
+								padding:10px;
+								margin:40px;
+								float:left;">
+				<h2>What our Customers <br>Have to Say</h2></div>
+		<div class="column2" style=
+					"background:#333;
+					max-width:550px;
+					float:right;
+					font-family: Century Gothic, Sans-Serif;
+					font-size:18px;
+					color:white;
+					padding:10px;
+					border:1px solid lightgray;
+					margin:40px;">
+					<blockquote><i>"Will and Elaine were delightful! One of the best parts of the hen weekend! 
+					They provided a great service, polite, respectful and absolutely brilliant food! 
+					They cleaned everything after wards too! Great value for money! 
+					All of the guests loved the meals they had chosen! Thank you so much! 
+					I will be recommending you to others in Essex!"</i><p><strong>Laura Hornsby</strong></p></blockquote><br></div>
+								</div>
+<hr>
+							
+<div style="margin-left:auto;margin-right:auto;padding:30px; max-width:1000px;">
+<img src="imgs/dessert.jpg" alt="Hot fudge brownie with ice cream - created by Chef Ramsay, private chef in Essex">
+</div>
+
+<hr>
+
+<h1 id="Contact" style="font-size:35px;font-family:Century Gothic, Sans-Sans-Serif;text-align:center;padding-top:280px;">Ready to Indulge?</h1>
+<p style="font-size:25px;font-family:Century Gothic, Sans-Sans-Serif;text-align:center;padding-bottom:380px;">Contact us <a href="quoteForm.html" style="color:black">here</a> for a quick quotation or call <strong>07450275127</strong> to discuss your bespoke dining plan.
+<br><br>We will be delighted to hear from you.</p>
+
+<script>
+
+var header = document.getElementById('image');
+
+function fadeOutOnScroll(element) {
+  if (!element) {
+    return;
+  }
+  
+  var distanceToTop = window.pageYOffset + element.getBoundingClientRect().top;
+  var elementHeight = element.offsetHeight;
+  var scrollTop = document.documentElement.scrollTop;
+  
+  var opacity = 1;
+  
+  if (scrollTop > distanceToTop) {
+    opacity = 1 - (scrollTop - distanceToTop) / elementHeight;
+  }
+  
+  if (opacity >= 0) {
+    element.style.opacity = opacity;
+  }
+}
+
+function scrollHandler() {
+  fadeOutOnScroll(header);
+}
+
+window.addEventListener('scroll', scrollHandler);
+
+</script>
+
+</body>
+</html>
